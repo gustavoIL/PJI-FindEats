@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+   <head>
+        <meta charset="utf-8">
+        <title>Perfil - FindEats</title>
+        <link rel="stylesheet" href="../lib/materialize/css/materialize.css">
+        <script type="text/javascript" src="../lib/materialize/js/materialize.min.js"></script>
+        <link rel="icon" type="imagem/ico" href="../img/logoIcon.png" />
+        <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <!-- NavBar -->
+      <nav class="nav-extended" style="background-color: #af0c14;">
+        <div class="nav-wrapper">
+            <a href="pesquisaReceitaPag.php" class="brand-logo center " style="font-family: 'Cabin', sans-serif;">FindEats</a>
+           <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="./php/suportePag.php">Suporte</a></li>
+            <li><a href="#configuraçõesPag">Configurações</a></li>
+           </ul>
+        </div>
+        <div class="nav-content">
+           <ul class="tabs" style="background-color: #a00c13;">
+            <li class="tab"><a class="active" href="pesquisaReceitaPag.php">Pesquisar Receita</a></li>
+            <li class="tab"><a class="active" href="receitaFactory.php">Criar Receita</a></li>
+            <li class="tab"><a class="active" href="perfilPag.html">Perfil</a></li>
+            <li class="tab"><a class="active" href="amigosPag.html">Amigos</a></li>
+           </ul>
+        </div>
+      </nav>
+
+      <br>
+      <div class="container" style="border: 2px solid #af0c14;">
+         <br>
+         <div class="row">
+            <div class="col s3">
+               <img src="../img/perfil.png" alt="Imagem de Perfil" height="200px">
+               <button type="button" name="botaoEditarImagem">Enviar Imagem</button>
+            </div>
+            <div class="col s6">
+               <h5>Nome:</h5>
+               <p value="" name"nomePerfil">Example Example</p>
+               <h5>Email:</h5>
+               <p value="" name"emailPerfil">example@example.com</p>
+               <h5>Avaliação:</h5>
+               <p value="" name"emailPerfil">Profissional em Masssas</p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="input-field col s12">
+               <textarea id="textarea1" class="materialize-textarea"></textarea>
+               <label for="textarea1">Sobre Mim</label>
+            </div>
+         </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- Footer -->
+      <footer class="page-footer" style="background-color: #FF8B3E;">
+         <div class="container">
+         <div class="row">
+           <div class="col l6 s12">
+             <h5 class="white-text">FindEats</h5>
+             <p class="grey-text text-lighten-4">Facilite sua vida, poupe sua mente, inove o seu paladar desvendando horizontes com FindEats</p>
+           </div>
+           <div class="col l4 offset-l2 s12">
+             <h5 class="white-text">Equipe</h5>
+             <ul>
+               <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/gustavolopesdelira">Gustavo Ita</a></li>
+               <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/davi.cintra.9">Davi Cintra</a></li>
+               <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/carlos.oliveira.524">Carlos Oliveira</a></li>
+             </ul>
+           </div>
+         </div>
+         </div>
+         <div class="footer-copyright">
+         <div class="container">
+         © 2019 Copyright FindEats
+         <a class="grey-text text-lighten-4 right" href="./php/suportePag.php">Feedback</a>
+         </div>
+         </div>
+      </footer>
+   </body>
+</html>
