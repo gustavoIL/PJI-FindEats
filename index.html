@@ -1,0 +1,86 @@
+    <!DOCTYPE html>
+    <html lang="pt" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>FindEats</title>
+        <link rel="stylesheet" href="./pags/css/style.css">
+        <link rel="stylesheet" href="./pags/css/materialize.css">
+        <link rel="icon" type="imagem/ico" href="./img/logoIcon.png" />
+        <script type="text/javascript" charset="utf8" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    </head>
+
+    <body>
+
+        <!--Navbar-->
+        <nav>
+            <div class="nav-wrapper" style="background-color: #ff8b00">
+                <a href="./index.html" class="brand-logo center">FindEats</a>
+            </div>
+        </nav>
+
+        <!--Video-->
+        <video width="100%" height="" autoplay="true" style="position: absolute; filter: blur(5px);" preload="auto" loop>
+            <source src="img/backgroundvideo.mp4" type="video/mp4">
+        </video>
+        <!--Login-->
+        <div style="float: right;">
+            <div style="position: absolute; right: -15%; width: 60%; height: 100%; background: black; opacity: 0.75; transform: skewX(-15deg);"></div>
+
+            <br>
+            <br>
+
+            <h3 style="position: relative; color: white;">Entre:</h3>
+
+            <div style="padding: 20px;width: 500px; margin-right: 1%;">
+                <form class="col s12" action="./pags/php/confirmacaoLogin.php" method="post" id="loginForm">
+                    <div>
+                        <div class="input-field col s10">
+                            <input placeholder="Nome de Usuário" class="validate" name="username" style="color: white;">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-field col s10">
+                            <input placeholder="Senha" type="password" class="validate" name="senha" style="color: white;">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <button class="btn waves-effect waves-light" type="submit" name="action" style="margin-right: 10px;" value="Login">Login</button>
+                    <a href="pags/php/create/cadastroPag.php" style="color: white; position: relative;">Criar uma Conta</a>
+
+                </form>
+            </div>
+        </div>
+<!--
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+            $('#loginform').submit(function() {
+
+            $.ajax({
+                type: "POST",
+                url: '/class/login.php',
+                data: {
+                    username: $("#username").val(),
+                    password: $("#senha").val()
+                },
+                success: function(data)
+                {
+                    if (data === 'Login') {
+                        window.location.replace('./pags/php/confirmacaoLogin.php');
+                    }
+                    else {
+                        alert('Usuário Inválido!');
+                    }
+                }
+            });
+
+        });
+
+        });
+        </script> -->
+    </body>
+</html>
