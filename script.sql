@@ -16,3 +16,7 @@ create table receita(
     modoPreparo varchar(200),
     porcao int
 );
+
+create table ingredientes(
+    nomeIngr varchar(30) primary key    
+);
