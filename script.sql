@@ -20,3 +20,10 @@ create table receita(
 create table ingredientes(
     nomeIngr varchar(30) primary key    
 );
+
+create table recipe_ingr(
+    nomeRec varchar(30),
+    nomeIngr varchar(30),
+    foreign key (nomeIngr) references ingredientes(nomeIngr),
+    foreign key (nomeRec) references receita(nome)
+);
